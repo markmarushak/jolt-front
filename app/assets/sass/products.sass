@@ -1,0 +1,73 @@
+#products
+  position: relative
+  margin-top: 11vw
+
+.product-card-basic
+  text-align: center
+  height: 100%
+
+.product-header
+  -webkit-border-radius: 5px 5px 0 0
+  -moz-border-radius: 5px 5px 0 0
+  border-radius: 5px 5px 0 0
+  padding: 1em 0
+
+.product-body
+  -webkit-border-radius: 0 0 5px 5px
+  -moz-border-radius: 0 0 5px 5px
+  border-radius: 0 0 5px 5px
+  background: #fff
+  height: inherit
+  padding: calc(1em + 4px) calc(1em - 5px) calc(2em - 2px)
+  justify-content: space-between
+
+.product-block-price
+  margin-bottom: .4em
+  position: relative
+  
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 6.25em
+    left: 50%
+    margin-left: -3.125em
+    border: 2px solid color("green")
+
+  .before-price-text
+    font-size: 1em
+
+  .product-price
+    padding: .25em 0 .5em
+
+
+
+@media (max-width: 768px)
+  .product-price-xs
+    font-size: 1em
+
+@media (min-width: 1024px)
+  .product-price-sm
+    font-size: calc(2em - 2px)
+
+@media (min-width: 1280px)
+  .product-price-lg
+    font-size: 2.5em
+
+@media (min-width: 1440px)
+  .product-price-xl
+    font-size: 3em
+
+
+.product-block-information
+  font-size: calc(1em - 1px)
+  line-height: 1.5em
+  margin-bottom: calc(1em - 6px)
+
+
+.product-block-sale
+  padding: .25em 0 .5em
+  font-size: calc(1em - 2px)
+
+.product-more-information
+  margin: .25em 0 0

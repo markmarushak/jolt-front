@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
+    <!--integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <section id="top-panel" class="bg-dark-blue d-flex flex-column justify-content-center border-bottom-green-1">
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-sm-2 col-4">
+                    <a href="#">
+                        <img src="assets/img/Component-30-1.png" class="top-logo" alt="logo">
+                    </a>
+                </div>
+
+                <div class="col-sm-10 col-8 p-0">
+
+                    <div class="d-flex flex-column align-items-end font-300">
+
+                        <ul class="navbar-nav flex-row justify-content-end col" id="customer-panel">
+                            <li class="nav-item">
+                                <a class="nav-link color-white" href="#">Live Chat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-white" href="#">Sign Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-white" href="#">Log In</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav flex-row justify-content-end col font-500">
+                            <li class="nav-item">
+
+                                <a class="nav-link color-white dropdown-btn" href="#" aria-container="#sub-menu">About
+                                    <span class="chevron-top-menu"><svg class="bi bi-chevron-down chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-white dropdown-btn" href="#" aria-container="#sub-menu">
+                                    Hosting
+                                    <span class="chevron-top-menu"><svg class="bi bi-chevron-down chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                </a>
+                                <div class="dropdown-sub-menu">
+                                    <div class="container">
+                                        <nav class="navbar">
+
+                                            <div class="collapse navbar-collapse d-flex flex-column align-items-start"
+                                                 id="sub-navbar">
+
+                                                <div>
+
+                                                    <header class="category-name font-400 color-green text-uppercase">
+                                                        Hosting
+                                                    </header>
+
+                                                    <ul class="navbar-nav flex-sm-row flex-wrap font-500 ">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white" href="#">
+                                                                Web Hosting
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white " href="#">
+                                                                Reseller Hosting
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white " href="#">
+                                                                Cloud VPS
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white " href="#">
+                                                                Cloud VPS
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white " href="#">
+                                                                Cloud VPS
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white " href="#">
+                                                                Dedicated Servers
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron-green"
+                                                                        width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div>
+
+                                                    <header class="category-name font-400 color-green text-uppercase">
+                                                        OTHER SERVICES
+                                                    </header>
+
+                                                    <ul class="navbar-nav flex-sm-row font-300">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white" href="#">
+                                                                Domain Names
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron" width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white" href="#">
+                                                                SSL Certificates
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron" width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link color-white" href="#">
+                                                                SSL Certificates
+                                                                <span class="chevron-top-menu"><svg
+                                                                        class="bi bi-chevron-right chevron" width="1em"
+                                                                        height="1em" viewBox="0 0 16 16"
+                                                                        fill="currentColor"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L10.293 8 4.646 2.354a.5.5 0 010-.708z"
+        clip-rule="evenodd"/>
+</svg></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </nav>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sub-menu" class="sub-nav bg-dark-blue border-top-green-1" aria-owns="0">
+        <div class="container">
+        </div>
+    </section>
+
+    <section id="header">
+
+        <div class="background">
+            <img src="assets/img/Group%20877.png" alt="">
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-7 col">
+
+                    <div class="row">
+
+                        <header class="title col-12">
+                            <h1 class="title-name color-white font-600">Web hosting?</h1>
+                        </header>
+
+                        <div class="col offset-1">
+
+                            <div class="row">
+
+                                <div class="sub-title color-white font-600 col-12">
+                                    Try the UKs best
+                                </div>
+
+                                <div class="additional-title mt-3 col-12">
+
+                                    <span class="d-flex">
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                        <span class="star"></span>
+                                    </span>
+
+                                    <p class="color-white fz-2">Rated 5* by our customers for over 12 years</p>
+
+                                </div>
+
+                                <div class="buttons-title col-12">
+
+                                    <div class="">
+
+                                        <a href="#" class="btn btn-custom btn-green font-600">Get started</a>
+
+                                        <a href="#" class="btn btn-custom box-green-2 color-white font-600">About</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col d-sm-flex d-none">
+
+                    <div class="header-side-picture">
+                        <img src="assets/img/Group%20884.png" class="img-100x100">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="products">
+
+        <div class="container">
+
+            <div class="row products-row">
+
+                <div class="col-lg-3 col-sm-6 col-6 mb-4">
+
+                    <div class="product-card product-card-basic d-flex flex-column">
+
+                        <div class="pre-product-header"></div>
+
+                        <div class="product-header bg-dark-blue color-white font-600">
+                            Web Hosting
+                        </div>
+
+                        <div class="product-body d-flex flex-column">
+
+                            <div class="product-block-price d-flex flex-column order-1">
+                                <span class="before-price-text color-dark order-1">Starting at</span>
+                                <span class="product-price order-2 color-dark-blue product-price-sm font-bold">
+                                    £2.95/mo
+                                </span>
+                            </div>
+
+                            <div class="product-block-information color-dark order-2">
+                                <p>For websites that need speed, reliability & security. Ideal for WordPress,
+                                    WooCommerce and other CMSes.</p>
+                                <p>Instant setup with cPanel. Free domain. Hosted on our UK Cloud Servers delivering
+                                    great performance at a low price.</p>
+                            </div>
+
+                            <div class="product-block-sale color-purple font-600 order-3">
+                                60% OFF yearly plans
+                            </div>
+
+                            <div class="product-more-information order-9">
+
+                                <a href="#" class="btn btn-custom btn-green font-600">see plan</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 mb-4">
+
+                    <div class="product-card product-card-basic d-flex flex-column">
+
+                        <div class="pre-product-header"></div>
+
+                        <div class="product-header bg-dark-blue color-white font-600">
+                            Web Hosting
+                        </div>
+
+                        <div class="product-body d-flex flex-column">
+
+                            <div class="product-block-price d-flex flex-column order-1">
+                                <span class="before-price-text color-dark order-1">Starting at</span>
+                                <span class="product-price order-2 color-dark-blue product-price-sm font-bold">
+                                    £2.95/mo
+                                </span>
+                            </div>
+
+                            <div class="product-block-information color-dark order-2">
+                                <p>For websites that need speed, reliability & security. Ideal for WordPress,
+                                    WooCommerce and other CMSes.</p>
+                                <p>Instant setup with cPanel. Free domain. Hosted on our UK Cloud Servers delivering
+                                    great performance at a low price.</p>
+                            </div>
+
+                            <div class="product-block-sale color-purple font-600 order-3">
+                                60% OFF yearly plans
+                            </div>
+
+                            <div class="product-more-information order-9">
+
+                                <a href="#" class="btn btn-custom btn-green font-600">see plan</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 mb-4">
+
+                    <div class="product-card product-card-basic d-flex flex-column">
+
+                        <div class="pre-product-header"></div>
+
+                        <div class="product-header bg-dark-blue color-white font-600">
+                            Web Hosting
+                        </div>
+
+                        <div class="product-body d-flex flex-column">
+
+                            <div class="product-block-price d-flex flex-column order-1">
+                                <span class="before-price-text color-dark order-1">Starting at</span>
+                                <span class="product-price order-2 color-dark-blue product-price-sm font-bold">
+                                    £2.95/mo
+                                </span>
+                            </div>
+
+                            <div class="product-block-information color-dark order-2">
+                                <p>For websites that need speed, reliability & security. Ideal for WordPress,
+                                    WooCommerce and other CMSes.</p>
+                                <p>Instant setup with cPanel. Free domain. Hosted on our UK Cloud Servers delivering
+                                    great performance at a low price.</p>
+                            </div>
+
+                            <div class="product-block-sale color-purple font-600 order-3">
+                            </div>
+
+                            <div class="product-more-information order-9">
+
+                                <a href="#" class="btn btn-custom btn-green font-600">see plan</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 mb-4">
+
+                    <div class="product-card product-card-basic d-flex flex-column">
+
+                        <div class="pre-product-header"></div>
+
+                        <div class="product-header bg-dark-blue color-white font-600">
+                            Web Hosting
+                        </div>
+
+                        <div class="product-body d-flex flex-column">
+
+                            <div class="product-block-price d-flex flex-column order-1">
+                                <span class="before-price-text color-dark order-1">Starting at</span>
+                                <span class="product-price order-2 color-dark-blue product-price-sm font-bold">
+                                    £2.95/mo
+                                </span>
+                            </div>
+
+                            <div class="product-block-information color-dark order-2">
+                                <p>For websites that need speed, reliability & security. Ideal for WordPress,
+                                    WooCommerce and other CMSes.</p>
+                                <p>Instant setup with cPanel. Free domain. Hosted on our UK Cloud Servers delivering
+                                    great performance at a low price.</p>
+                            </div>
+
+                            <div class="product-block-sale color-purple font-600 order-3">
+                                60% OFF yearly plans
+                            </div>
+
+                            <div class="product-more-information order-9">
+
+                                <a href="#" class="btn btn-custom btn-green font-600">see plan</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pre-middle-page"></section>
+
+    <section id="top-middle-page">
+
+        <div class="background d-sm-block d-none">
+            <img src="assets/img/Group%20931%20-%20new.png">
+        </div>
+
+        <div class="substrate bottom h-20-prc bg-white d-sm-block d-none"></div>
+
+        <div class="container">
+
+            <div class="row mb-sm-5 mb-5 p-sm-0 p-4">
+
+                <div class="col-sm-8 col-12 offset-sm-2">
+
+                    <div class="block-info block-base">
+
+                        <div class="section__img">
+                            <img class="img" src="assets/img/Group%20929.png" alt="top">
+                        </div>
+
+                        <header class="section__title center">
+                            <div class="title__name">The friendliest Customer Service around.</div>
+                            <div class="title__sub"> We’re here to help, 24×7.</div>
+                        </header>
+
+                        <div class="section__body">
+                            Our Cloud Services just work. Forget about downtime, slowdowns and issues you’ve experienced
+                            elsewhere. Our technologically superior components, built into our cloud, deliver
+                            reliability and a suite of tools to help you succeed online. However, we know that there’s
+                            nothing more frustrating than not being able to speak to someone when something doesn’t work
+                            as you quite expect. So at Jolt, we have a friendly team available, around the clock to
+                            support you. We’re available at just the click of a button via our Live Chat / Live Support
+                            platform. Talk to us now and see for yourself :)
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row mt-sm-5 justify-content-between p-sm-0 p-4">
+
+                <div class="col-sm-3 col-12 mb-5">
+
+                    <div class="block-info block-base block-sm">
+
+                        <div class="section__img">
+                            <img class="img" src="assets/img/Group%20943.png" alt="top">
+                        </div>
+
+                        <header class="section__title center">
+                            <div class="title__name">Pay for Hosting with Bitcoin, Amex & more</div>
+                        </header>
+
+                        <div class="section__body">
+                            Got a preferred payment method? Chances are that we already support it. We love and support
+                            Bitcoin, and you are paying for UK based hosting with Bitcoin (and not some dodgy off-shore
+                            stuff). We also proudly accept American Express and know how important those MR points are
+                            for you! We also take all major Credit/Debit cards, Paypal, Direct Debit and more.
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3 col-12 mb-5">
+
+                    <div class="block-info block-base block-sm">
+
+                        <div class="section__img">
+                            <img class="img" src="assets/img/Group%20944.png" alt="top">
+                        </div>
+
+                        <header class="section__title center">
+                            <div class="title__name">99.99%+ Network & Cloud Uptime</div>
+                        </header>
+
+                        <div class="section__body">
+                            Our network and server hardware that powers our cloud and hosting is best in class. This
+                            means we deliver 99.99% uptime month-in, month-out and our 2019 uptime is 100% to date. Our
+                            team of experts monitors our services throughout the day and catches issues before they
+                            become problems. Our network has DDoS protection and resilience built in.
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3 col-12 mb-5">
+
+                    <div class="block-info block-base block-sm text-center">
+
+                        <div class="section__img">
+                            <img class="img" src="assets/img/Group%20945.png" alt="top">
+                        </div>
+
+                        <header class="section__title center">
+                            <div class="title__name">The Fastest Hosting Help Around</div>
+                        </header>
+
+                        <div class="section__body">
+                            We’re proud of our support and are know we’re the best in the business. No queues, no
+                            delays. If you need help we’re with you in an average of 30 seconds via Live Support and
+                            under 30 minutes via Helpdesk, throughout the night and day. Our Jolt team is 100% in-house,
+                            highly qualified and prides itself on giving quality, useful help on whatever you need. Our
+                            customers see us as partners who are here to help grow your website.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="middle-page" class="d-flex align-items-center">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="section__right col-sm-6 col-12 d-sm-flex d-none">
+
+                    <img class="img" src="assets/img/Group%20880.png" alt="">
+
+                </div>
+
+                <div class="section__left col-sm-6 col-12 d-flex flex-column justify-content-center align-items-center text-center">
+
+                    <div class="stars">
+                        <span class="d-flex">
+                        <span class="star star-xl"></span>
+                        <span class="star star-xl"></span>
+                        <span class="star star-xl"></span>
+                        <span class="star star-xl"></span>
+                        <span class="star star-xl"></span>
+                    </span>
+                    </div>
+
+                    <div class="text">
+                        4.8 out of 5 from 110 review <br> 97% would recommend
+                    </div>
+
+                    <div class="button">
+                        <a href="#" class="btn btn-custom btn-green font-600">read more</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="bottom-middle-page"></section>
+
+    <section id="after-middle-page"></section>
+
+    <section id="faq"></section>
+
+    <footer></footer>
+
+
+</div>
+
+</body>
+</html>

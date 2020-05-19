@@ -1,0 +1,52 @@
+@mixin color($name)
+  .color-#{$name}
+    color: color($name)
+
+@mixin bg($name)
+  .bg-#{$name}
+    background: color($name)
+
+@mixin border($name, $size)
+  .border-#{$name}-#{$size}
+    border: #{$size}px solid color($name) !important
+
+@mixin box($name, $size)
+  .box-#{$name}-#{$size}
+    -webkit-box-shadow: inset 0 0 0 #{$size}px color($name)
+    -moz-box-shadow: inset 0 0 0 #{$size}px color($name)
+    box-shadow: inset 0 0 0 #{$size}px color($name)
+
+@mixin border-top($name, $size)
+  .border-top-#{$name}-#{$size}
+    border-top: #{$size}px solid color($name) !important
+
+@mixin border-bottom($name, $size)
+  .border-bottom-#{$name}-#{$size}
+    border-bottom: #{$size}px solid color($name) !important
+
+@mixin font($family, $weight)
+  .font-#{$weight}
+    font-family: $family
+    font-weight: #{$weight}
+    font-size: 1em
+
+@mixin make-poppins-600()
+  font-family: "Poppins"
+  font-weight: 600
+
+@mixin font-size-class($class, $media, $fz)
+  @media screen and (max-width: #{$media}px)
+    .#{$class}
+      font-size: $fz
+
+@mixin w-h-class($class, $media, $width, $height)
+  @media screen and (max-width: #{$media}px)
+    .#{$class}
+      width: #{$width}px
+      height: #{$height}px
+
+
+@function color($name)
+  @if (map-has-key($colors, $name))
+    @return map-get($colors, $name)
+
