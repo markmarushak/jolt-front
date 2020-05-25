@@ -1,0 +1,10 @@
+@import "__img/article__img"
+@import "__title/article__title"
+@import "__body/article__body"
+
+$container: "article__block"
+
+.#{$container}
+  @include make-custom-row()
+  flex-direction: column
+  align-items: center

@@ -1,0 +1,23 @@
+$container: "header__title__sub"
+
+.#{$container}
+  display: flex
+  font-size: 5.625em
+  font-weight: bold
+  color: color("dark-blue")
+
+@media (max-width: map-get($grid-breakpoints, 'xl'))
+  .#{$container}
+    font-size: 3.7em
+
+@media (max-width: map-get($grid-breakpoints, 'lg'))
+  .#{$container}
+    font-size: 3em
+
+@media (max-width: map-get($grid-breakpoints, 'md'))
+  .#{$container}
+    font-size: 2.7em
+
+@media (max-width: map-get($grid-breakpoints, 'sm'))
+  .#{$container}
+    font-size: 2em

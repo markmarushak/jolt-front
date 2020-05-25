@@ -1,0 +1,19 @@
+
+// before & must be .background
+.background__square-60
+  background: url("../img/Group 931 - new.png")
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  min-height: 50vw
+
+@media (min-width: 1920px)
+  .background__square-60
+    -webkit-background-size: cover
+    background-size: cover
+
+@media (max-width: map-get($grid-breakpoints, "sm") )
+  .background__square-60
+    min-height: 70vw
+
+

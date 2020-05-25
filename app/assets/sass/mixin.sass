@@ -10,11 +10,12 @@
   .border-#{$name}-#{$size}
     border: #{$size}px solid color($name) !important
 
-@mixin box($name, $size)
-  .box-#{$name}-#{$size}
+@mixin btn-outline($name, $size)
+  .btn-outline-#{$name}-#{$size}
     -webkit-box-shadow: inset 0 0 0 #{$size}px color($name)
     -moz-box-shadow: inset 0 0 0 #{$size}px color($name)
     box-shadow: inset 0 0 0 #{$size}px color($name)
+    color: color("white")
 
 @mixin border-top($name, $size)
   .border-top-#{$name}-#{$size}
@@ -45,8 +46,38 @@
       width: #{$width}px
       height: #{$height}px
 
+@mixin line($side, $color, $height)
+  .line-#{$side}-#{$color}-#{$height}
+    $side: 0
+    color: color($color)
+    background: color($color)
+    position: absolute
+    width: 100%
+    height: #{$height}px
+
 
 @function color($name)
-  @if (map-has-key($colors, $name))
-    @return map-get($colors, $name)
+  @if (map-has-key($jolt__colors, $name))
+    @return map-get($jolt__colors, $name)
 
+@mixin color_for_element($selector)
+  @each $name, $color in $jolt__colors
+    .#{$selector}-#{$name}
+      color: #{$color}
+
+@mixin make-custom-row($gutter: 0)
+  display: flex
+  flex-wrap: wrap
+
+@mixin make-custom-btn
+  padding: calc(1em - 1px) calc(2em - 2px)
+  font-size: calc(1em - 2px)
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  text-decoration: none
+  font-weight: bold
+
+  &:hover
+    text-decoration: none
+    color: color('dark')

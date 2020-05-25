@@ -1,0 +1,17 @@
+
+$container: "custom__padding_top"
+
+.#{$container}
+  padding-top: 250px
+
+@media (max-width: 1600px)
+  .#{$container}
+    padding-top: 200px
+
+@media (max-width: map_get($grid-breakpoints, 'xl'))
+  .#{$container}
+    padding-top: 200px
+
+@media (max-width: map_get($grid-breakpoints, 'sm'))
+  .#{$container}
+    padding-top: 100px

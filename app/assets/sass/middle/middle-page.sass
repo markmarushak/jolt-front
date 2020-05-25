@@ -1,0 +1,62 @@
+@import "top/top-middle-page"
+@import "bottom/bottom-middle-page"
+
+
+$font_size_text: 30px
+$font_height_text: 43px
+
+@mixin font-text($media, $fz: $font_size_text, $height: $font_height_text)
+  @media (max-width: #{$media}px)
+    #middle-page
+      .text
+        font: Bold #{$fz}/#{$height} Poppins
+
+@mixin button($fz)
+  .button
+
+    > *
+      font-size: #{$fz}
+      letter-spacing: 1.4px
+
+#middle-page
+
+
+
+  .section__right
+    > *
+      margin-top: .5em
+      margin-bottom: .5em
+
+    > *:first-child
+      margin-top: 0
+
+    > *:last-child
+      margin-bottom: 0
+
+  .section__left
+    .img
+      max-width: 420px
+
+  @include button(14px)
+
+  .text
+    color: color('white')
+
+@media (max-width: 768px)
+  #middle-page
+    .middle
+      max-height: 13em
+
+@media (max-width: 320px)
+  #middle-page
+    .middle
+      min-height: 200px
+
+
+@include font-text(2700, 1.87em)
+@include font-text(1780, 1.7em)
+@include font-text(1440, 1.3em, 30px)
+@include font-text(1280, 1.2em, 25px)
+@include font-text(1024, 1em, 25px)
+
+

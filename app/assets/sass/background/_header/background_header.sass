@@ -1,0 +1,14 @@
+
+// before & must be .background
+.background__header
+  background: $square-blue-img
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  min-height: 50vw
+
+@media (max-width: map-get($grid-breakpoints, "sm") )
+  .background__header
+    min-height: 70vw
+
+

@@ -1,29 +1,34 @@
 //import main font poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 
-@import "../../../node_modules/bootstrap/scss/bootstrap"
+@import "bootstrap/scss/bootstrap.scss"
 
 // global variable
 @import "variable.scss"
 
 // function automation
-@import "mixin"
+@import "mixin.sass"
+
+@import "background/background"
 
 // custom classes which useful to project
-@import "custom"
+@import "custom/custom"
 
-@import "blocks-info"
+@import "block-info/blocks-info"
 
 // classes for top page where logo and menu
-@import "top"
+@import "top-panel/top-panel"
 
-@import "header"
-//...
-@import "products"
+@import "header/header"
 
-@import "top-middle-page"
-
-@import "middle-page"
+@import "product/product__card"
+@import "middle/middle-page"
+@import "aticle/article"
+@import "review/review"
+@import "faq/faq__block"
+@import "banner/banner"
+@import "footer/footer"
+@import "company-licence/company-licence"
 
 
 

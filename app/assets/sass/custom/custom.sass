@@ -1,0 +1,184 @@
+@import "__padding/_top/custom__padding_top"
+@import "__line/_top/custom__line_top"
+
+@include color("dark-blue")
+@include color("blue")
+@include color("purple")
+@include color("green")
+@include color("white")
+@include color("dark")
+
+@include bg("dark-blue")
+@include bg("blue")
+@include bg("gray")
+@include bg("green")
+
+
+// border
+
+@include border("green", 1)
+@include border("green", 2)
+@include border("white", 1)
+@include border("purple", 2)
+
+@include border-top("green", 1)
+@include border-bottom("green", 1)
+
+// box-shadow
+@include btn-outline("green", 2)
+
+@include font("Poppins", "bold")
+@include font("Poppins", "normal")
+@include font("Poppins", "400")
+@include font("Poppins", "300")
+@include font("Poppins", "500")
+@include font("Poppins", "600")
+
+// line - side - height
+@include line("bottom", "green", 2)
+
+body
+  font-size: 100%
+  background: color("gray")
+
+@media (min-width: 1600px)
+  .col-xxl-7
+    -ms-flex: 0 0 58.333333%
+    flex: 0 0 58.333333%
+    max-width: 58.333333%
+
+.btn-custom
+  @include make-custom-btn
+
+@media (max-width: 1024px)
+  .btn-custom
+    min-width: auto
+    padding: calc(.8em - 2.5px) calc(1.7em - 8px)
+    font-size: calc(.9em - 2px)
+
+
+.btn-green
+  background: color("green")
+  color: color("dark-blue")
+  text-transform: uppercase
+
+.jolt-stars
+  background: url(../img/Path%202197.png)
+  background-repeat: repeat-x
+  -webkit-background-size: contain
+  background-size: contain
+  display: flex
+
+@include w-h-class('jolt-stars', '2700', '140', '26')
+@include w-h-class('jolt-stars', '1024', '120', '23')
+@include w-h-class('jolt-stars', '768', '100', '19')
+
+.star
+  display: flex
+  background: url(../img/Path%202196.svg)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  width: 1.18vw
+  height: 1.12vw
+  min-width: 14px
+  min-height: 13px
+
+  &.star.star-xl
+    width: 2.44vw
+    height: 2.225vw
+    min-width: 24px
+    min-height: 23px
+    max-width: 45px
+    max-height: 43px
+
+
+.chevron-green
+  fill: color('green')
+  stroke: color('green')
+  stroke-width: 1px
+  width: .7em
+
+.chevron
+  fill: color('white')
+  stroke: color('white')
+  stroke-width: 1px
+  width: .7em
+
+.chevron-top-menu
+  position: relative
+  margin-left: .2em
+
+.dropdown-sub-menu
+  display: none
+
+.img-100x100
+  width: 100%
+  height: auto
+  object-fit: contain
+
+.img
+  width: 100%
+
+
+
+.substrate
+  position: absolute
+  width: 100%
+
+  &.bottom
+    bottom: 0
+
+  &.h-20-prc
+    height: 20%
+
+@each $name, $value in $jolt__colors
+  .nav-link_#{$name}
+    color: $value
+
+  .nav-link_#{$name}:focus
+    color: $value
+    opacity: .8
+
+.chevron-right-green
+  background: url(../img/link-chevron-green-right.svg)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  width: 10px
+  height: 10px
+
+.chevron-right-white
+  background: url(../img/link-chevron-white-right.svg)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  width: 10px
+  height: 10px
+
+.left-0
+  left: 0
+
+.right-0
+  right: 0
+
+@media screen and (max-width: 768px)
+  .nav-link_sm
+    padding: .3rem 0
+
+@media screen and (max-width: 375px)
+  .nav-link_sm
+    font-size: 85%
+
+.nav-item_border-right
+  .nav-item:not(:last-child)
+    position: relative
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      position: absolute
+      height: 55%
+      width: .5px
+      right: 0
+      background: color('green')

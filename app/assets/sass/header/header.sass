@@ -1,0 +1,59 @@
+@import "__title/header__title"
+@import "__description/header__description"
+@import "__additional/header__additional"
+@import "__buttons/header__buttons"
+@import "__picture/header__picture"
+
+$container: "header"
+
+##{$container}
+  position: relative
+  padding-top: 3%
+
+  .header__background
+    top: -4vw
+
+
+.header-side-picture
+  position: relative
+
+
+@include color_for_element($container)
+
+// media queries
+
+@media (min-width: 1500px)
+  ##{$container}
+    .header__background
+      top: -13vw
+
+@media (max-width: map-get($grid-breakpoints, 'xl'))
+  ##{$container}
+
+
+@media (max-width: map-get($grid-breakpoints, 'md'))
+  ##{$container}
+    padding-top: 6.7%
+
+    .header__background
+      top: 0
+
+@media (max-width: map-get($grid-breakpoints, 'sm'))
+  ##{$container}
+    margin-bottom: 30vw
+
+@media (max-width: 375px)
+  ##{$container}
+    .header__background
+      min-height: calc(70vw + 10%)
+      width: 110.2%
+      left: -32.2px
+
+@media (max-width: 320px)
+  ##{$container}
+    .header__background
+      min-height: calc(70vw + 30%)
+
+
+
+

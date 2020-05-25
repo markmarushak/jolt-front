@@ -1,0 +1,36 @@
+@import "__name/article__title__name"
+@import "__sub/article__title__sub"
+
+$container: "article__title"
+
+.#{$container}
+  @include make-custom-row(0)
+  @include make-poppins-600
+  flex-direction: column
+  margin: 2em 0 calc(1em + 7px)
+  align-items: center
+  text-align: center
+  font-size: calc(2em - 2px)
+
+// modification
+.#{$container}_size-sm
+  font-size: 20px
+
+.#{$container}_left
+  text-align: left
+  align-items: flex-start
+  width: 100%
+
+@media (max-width: map_get($grid-breakpoints, "md"))
+  .#{$container}
+    font-size: 1.5em
+
+  .#{$container}_size-sm
+    font-size: 17px
+
+@media (max-width: map_get($grid-breakpoints, "sm"))
+  .#{$container}
+    font-size: 1.2em
+
+  .#{$container}_size-sm
+    font-size: 1em

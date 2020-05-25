@@ -1,0 +1,16 @@
+
+$container: "header__additional"
+
+.#{$container}
+  margin-top: 37px
+  line-height: 2.4em
+  font-size: calc(1em + 2px)
+
+@media (max-width: map_get($grid-breakpoints, 'xl'))
+  .#{$container}
+    margin-top: 24px
+
+@media (max-width: map_get($grid-breakpoints, 'sm'))
+  .#{$container}
+    font-size: 14px
+    margin-top: 20px

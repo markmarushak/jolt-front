@@ -1,0 +1,19 @@
+@import "__body/faq__item__body"
+@import "__header/faq__item__header"
+
+$container: "faq__item"
+
+.#{$container}
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+  flex: 0 0 50%
+  width: 100%
+  padding: 10px 25px
+
+@media (max-width: map_get($grid-breakpoints, 'sm'))
+  .#{$container}
+    flex: 0 0 100%
+    padding: 10px 0

@@ -1,0 +1,28 @@
+@import "__author/review__author"
+@import "__message/review__message"
+@import "__rating/review__rating"
+
+
+$container: "review__list"
+
+.#{$container}
+  display: flex
+  flex-direction: column
+  margin-top: 3em
+
+
+$container: "review__block"
+
+.#{$container}
+  display: flex
+  flex-direction: column
+  background: color('dark-blue')
+  padding: 32px 52px 28px 30px
+  color: color('white')
+  border-radius: 5px
+  margin-top: 2em
+  max-width: 700px
+
+
+  > *:not(.review__rating)
+    margin-top: 20px

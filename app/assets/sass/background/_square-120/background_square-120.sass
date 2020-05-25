@@ -1,0 +1,21 @@
+
+// before & must be .background
+.background__square-120
+  background: url("../img/Repeat Grid 1.png")
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  height: 100%
+  top: 0
+
+@media (min-width: 1920px)
+  .background__square-120
+    -webkit-background-size: cover
+    background-size: cover
+    min-height: 40vw
+
+@media (max-width: map-get($grid-breakpoints, "sm") )
+  .background__square-120
+    min-height: 70vw
+
+

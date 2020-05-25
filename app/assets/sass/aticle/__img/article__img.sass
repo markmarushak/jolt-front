@@ -1,0 +1,27 @@
+
+$container: "article__img"
+
+@mixin article_media_img_left($key)
+  @media screen and (min-width: map_get($grid-breakpoints, $key))
+    .#{$container}_left-#{$key}
+      width: 100%
+      justify-content: flex-start
+
+@mixin article_media_img_right($key)
+  @media (max-width: map_get($grid-breakpoints, $key))
+    .#{$container}_left-#{$key}
+      width: 100%
+      justify-content: flex-end
+
+.#{$container}
+  @include make-custom-row(0)
+  justify-content: center
+
+  .img
+    max-width: 272px
+
+
+@each $key, $width in $grid-breakpoints
+  @include article_media_img_left($key)
+
+

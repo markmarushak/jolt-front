@@ -1,0 +1,34 @@
+
+$container: "custom__line"
+
+@mixin make-custom-line($color, $side)
+  $container: #{$container}_#{$side}-#{$color}
+  .#{$container}
+    padding-#{$side}: 200px
+    position: relative
+
+    &:before
+      content: ''
+      #{$side}: 0
+      left: 0
+      color: color($color)
+      background: color($color)
+      position: absolute
+      width: 100%
+      height: 2px
+
+  @media (max-width: 1600px)
+    .#{$container}
+      padding-#{$side}: 100px
+
+  @media (max-width: map_get($grid-breakpoints, 'sm'))
+    .#{$container}
+      padding-#{$side}: 50px
+
+      &:before
+        left: unset
+        width: 90%
+
+@each $name, $color in $jolt__colors
+  @include make-custom-line($name,'top')
+  @include make-custom-line($name,'bottom')

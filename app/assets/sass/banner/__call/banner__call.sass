@@ -1,0 +1,18 @@
+@import "__header/banner__header"
+@import "__message/banner__message"
+@import "__button/banner__button"
+@import "__stars/banner__stars"
+
+$container: "banner__call"
+
+.#{$container}
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-left: 15px
+  padding-right: 15px
+
+  >*:nth-child(1)
+  >*:nth-child(2)
+    margin: 20px 0 32.5px
+  >*:nth-child(3)
